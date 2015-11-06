@@ -8,5 +8,5 @@ META-R is a set of R programs that performs statistical analyses to calculate BL
 ```R
    install.packages(pkg='devtools',repos='https://cran.r-project.org/')  #1# install devtools
    library(devtools)                                                     #2# load the library
-   install_git('https://github.com/gdlc/BGLR/')  
+   install_git('https://github.com/MarcooLopez/META-R/')  
 ```
