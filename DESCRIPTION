@@ -1,0 +1,10 @@
+Package: METAR
+Type: Package
+Title: Multi Environment Trial Analysis with R
+Version: 4.9999
+Date: 2015-11-07
+Author: Marco Lopez-Cruz, Gregorio Alvarado, Jose Crossa, Mateo Vargas
+Maintainer: Marco Lopez-Cruz <malctony@hotmail.com>
+Description: Multi Environment Trial Analysis with R
+License: GNU
+Depends: R (>= 3.1.3)
