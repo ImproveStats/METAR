@@ -71,7 +71,7 @@ GenCorrLoc <- function()
 						flagCOV <- prod(flagCOV2)==1
 						if(flagCOV) datos.tmp <- data.frame(datos.tmp,COV)
 					}
-          tmp <- ifelse(flagCOV & !is.null(covariate), ifelse(adjALL,TRUE,ifelse(i==1,TRUE,FALSE)),FALSE)
+					tmp <- ifelse(flagCOV & !is.null(covariate), ifelse(adjALL,TRUE,ifelse(i==1,TRUE,FALSE)),FALSE)
 					tmpCOV <- ifelse(tmp,paste("+Cov",1:length(covariate),collapse="",sep=""),"")
 					fm.text <- ifelse(ExpDes=="RCB","lmer(y_est~(1|Entry)+(1|Rep)","lmer(y_est~(1|Entry)+(1|Rep)+(1|Block:Rep)")										
 					fm.text <- paste(fm.text,tmpCOV,",data=datos.tmp)",sep="")
