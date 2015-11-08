@@ -11,10 +11,10 @@ getDirRoot <- function()
     dirlib <- .libPaths()
     if (length(dirlib) > 0) {
         for (i in 1:length(dirlib)) {
-            folder <- paste0(dirlib[i],"/METAR")
-            if(file.exists(folder)) 
-                tmp <- folder
+            tmp <- paste0(dirlib[i],"/METAR")
+            if(file.exists(tmp)) 
+                folder <- paste0(dirlib[i],"/METAR")
         }
     }
-    return(tmp)
+    return(folder)
 }
