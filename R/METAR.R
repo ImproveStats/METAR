@@ -11,7 +11,7 @@ getDirRoot <- function()
     dirlib <- .libPaths()
     if (length(dirlib) > 0) {
         for (i in 1:length(dirlib)) {
-            tmp <- paste0(dirlib[i],"/METAR")
+            tmp <- paste0(dirlib[i],"/METAR/exec/META-R.jar")
             if(file.exists(tmp)) 
                 folder <- paste0(dirlib[i],"/METAR")
         }
