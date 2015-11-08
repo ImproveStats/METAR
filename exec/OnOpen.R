@@ -2,7 +2,6 @@ rm(list=ls())
 
 library(METAR)
 
-
 escribe_LOG(paste("\tR version:\t\t\t\t",version$version.string,sep=''),FileName="LOG0.txt") 
 a <- installed.packages()
 tmp <- "lme4"%in%rownames(a)
